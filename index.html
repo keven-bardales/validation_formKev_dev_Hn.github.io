@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    /> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <section id="section_Form">
+
+    <div id="form_section">
+      
+    
+      <div id="table"></div>
+      <div id="form_container">
+        <form action="" id="form_consulta">
+          <h2>Make your Request</h2>
+          <div class="form_input">
+            <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Please enter your name..."
+            required
+          />
+          <div class="icon">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          </div>
+          <div class="form_input disable">
+            <input
+            class="disable"
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Please enter your email adress..."
+            required
+            disabled
+            />
+          <div class="icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          </div>
+         <div class="form_input disable">
+          <select class="disable" name="subject" id="subject" required disabled>
+            <option value="" selected>Select an option...</option>
+            <option value="1">Registration Number</option>
+            <option value="2">Payments</option>
+            <option value="3">Others...</option>
+          </select>
+          <div class="icon">
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          </div>
+
+          <div class="form_input last_input">
+            <textarea  name="other" id="other" cols="30" rows="10"></textarea>      
+             </div>
+             <div class="form_input">
+              
+             <button id="send" class="disable" disabled>Send</button>
+             <button id="reset" >Reset</button>
+             </div>
+        </form>
+      </div>
+    </div>
+
+
+    </section>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>

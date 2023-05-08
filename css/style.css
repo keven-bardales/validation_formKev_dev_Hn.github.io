@@ -1,0 +1,217 @@
+:root {
+  /* Font Sizes */
+  --font-size-small: 12px;
+  --font-size-medium: 16px;
+  --font-size-large: 24px;
+
+  /* Font Colors */
+  --font-color-primary: #00001a;
+  --font-color-secondary: #f15e50;
+  --font-color-white: white;
+  --font-color-accent: #ff0000;
+  --font-color-dark: black;
+  --font-color-p: hsl(236, 13%, 42%);
+  --font-color-p-new: hsl(237.8, 15.4%, 34.3%);
+  --font-color-input: #dcd8d8;
+  --bg-color-primary: #ff7a7a;
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* Font Families */
+  --font-family-primary: 'Arial', sans-serif;
+  --font-family-secondary: 'Helvetica', sans-serif;
+  --font-family-accent: 'Georgia', serif;
+}
+
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: all 300ms;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+  border: none;
+  font-size: 1em;
+}
+
+#section_Form {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+#form_section {
+  margin: 0px auto;
+  width: 80%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 4em;
+  overflow: hidden;
+  background-color: var(--bg-color-primary);
+  background-image: url(/assets/images/bg-intro-desktop.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+#form_section #form_container {
+  display: flex;
+  align-items: stretch;
+  flex-basis: 35%;
+  border-radius: 1em;
+  box-shadow: 0px 0px 20px gray;
+}
+
+#table {
+  background-color: white;
+  flex-basis: 50%;
+  border-radius: 1em;
+  box-shadow: 0px 0px 20px gray;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 1.5em auto;
+  font-size: 1em;
+  border-radius: 1em;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+tbody {
+  overflow: scroll;
+}
+
+table tbody tr {
+  border-bottom: 2px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+  background: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid var(--bg-color-primary);
+}
+
+table th,
+table td {
+  padding: 1em;
+}
+
+table thead tr {
+  text-align: left;
+  background-color: var(--bg-color-primary);
+  color: white;
+  font-weight: bold;
+}
+
+#form_consulta {
+  padding: 2em;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 1em;
+}
+
+#form_consulta h2 {
+  text-align: center;
+  flex-basis: 100%;
+}
+
+#form_consulta button {
+  flex-basis: 40%;
+  outline: none;
+  border: none;
+  background-color: var(--bg-color-primary);
+  color: white;
+  font-size: 1em;
+  padding: 0.7em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#form_consulta button:hover {
+  background-color: #00001a;
+  color: white;
+}
+
+.form_input {
+  flex-basis: 100%;
+  flex-grow: 1;
+  background-color: white;
+  margin: 1em 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.3em;
+  border: 2px solid var(--font-color-input);
+}
+
+.form_input:last-child {
+  border: none;
+  text-align: center;
+}
+
+.form_input input,
+.form_input select {
+  flex-basis: 85%;
+  padding: 1em 0.5em;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  color: #97969d;
+  background-color: white;
+}
+
+.form_input textarea {
+  flex-basis: 100%;
+  outline: none;
+  border: none;
+}
+
+.form_input:nth-child(5) {
+  display: none;
+}
+
+.form_input input:focus,
+.form_input select:focus {
+  outline: none;
+  color: black;
+}
+
+.form_input:focus-within {
+  border-color: #de7878;
+  outline: none;
+  color: black;
+}
+
+.icon {
+  color: var(--bg-color-primary);
+  text-align: center;
+  flex-basis: 15%;
+  font-size: 1.5em;
+}
+
+.disable {
+  background-color: #ccc !important;
+  cursor: default !important;
+}
+
+.show {
+  display: flex !important;
+}
