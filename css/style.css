@@ -123,6 +123,7 @@ table thead tr {
   background-color: white;
   display: flex;
   flex-wrap: wrap;
+  align-items: self-start;
   border-radius: 1em;
 }
 
