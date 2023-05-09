@@ -59,7 +59,7 @@ body {
   padding: 4em;
   overflow: hidden;
   background-color: var(--bg-color-primary);
-  background-image: url(/assets/images/bg-intro-desktop.png);
+  background-image: url(./assets/images/bg-intro-desktop.png);
   background-position: center center;
   background-size: cover;
 }
